@@ -8,6 +8,29 @@ body{
     background:#21272c;
     color:#fff;
 }
+.pop-container{
+    width:350px;
+    height:350px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+.closebtn{
+    padding:0;margin:0;
+    background: #fff;
+    height:5%;
+    /* margin-bottom:10px; */
+}
+   
+.close{
+    background: rgb(250, 250, 250);
+    position: absolute;
+    top:-1px;
+    right:1px;
+    color:rgb(0, 0, 0);
+    padding:5px;
+}
 
 .main{
     position: relative;
@@ -126,4 +149,7 @@ body{
 
 .hide{
     display: none;
+}
+.hideContainer{
+    display:none;
 }

@@ -55,17 +55,23 @@ body{
 /* above this aligned each item at its place */
 
 /* decoration of items ! down below*/
-.top-btn button{
+.btn-top-sign-in {
     padding:7px 3px 7px 3px;
     background: #fff;
     border:none;
 }
+.btn-top-sign-up{
+    padding:7px 3px 7px 3px;
+    background: #fff;
+    border:none;
+} 
+
 
 .inputgmail input{
    padding:7px 3px 7px 3px;
    width:100%;
    margin:0 0 10px 0; 
-   background:rgb(144, 229, 250);
+   background:rgb(113, 224, 243);
    border:none;
    border-radius:5px;
 }
@@ -76,6 +82,18 @@ body{
     background:rgb(113, 224, 243);
     border:none;
     border-radius:5px;
+}
+.inputpass2 input{
+    padding:7px 3px 7px 3px;
+    width:100%;
+    margin:20px 0 10px 0; 
+    background:rgb(113, 224, 243);
+    border:none;
+    border-radius:5px;
+    display:none;
+}
+.show input{
+    display:block;
 }
 .signin button{
     padding:7px 3px 7px 3px;
@@ -99,4 +117,13 @@ body{
 .remember button:hover{
     cursor:pointer;
     outline: none;
+}
+
+/* event  */
+.changeBorder{
+    border-bottom:2px solid #58b87d;
+}
+
+.hide{
+    display: none;
 }

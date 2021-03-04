@@ -9,70 +9,31 @@
     <title>Farmer's Market</title>
   </head>
   <body>     
-
-        <h1>Sign-In Sign-Up Page</h1>
-
-        <div class="modal-login" id="modal-login">
-            <div class="inoutbar" id="inoutbar">
-                <div class="inbtn">
-                    <button>Sign In</button>
-                </div>
-                <div class="outbtn">
-                    <button>Sign Up</button>
-                </div>
+      <div class="main">
+            <div class="top-btn">
+                <button class="btn-top-sign-in">Sign In</button>
+                <button class="btn-top-sign-up">Sign Up</button>
             </div>
-            <div class="login" id="login"> -->
-                <form class="login-input" id="login-input">
-                    <div class="input1" id="input1">
-                        <input type="email" class="login-email" id="email" placeholder="Email...">
+                 
+            <div class="loginform">
+                <form action="">
+                    <div class="inputgmail">
+                        <input type="text" placeholder="Email">
                     </div>
-                    
-                    <div class="input2" id="input2">
-                        <input type="password" class="login-password" id="login-password" placeholder="Password...">
+                    <div class="inputpass">
+                        <input type="password" placeholder="Password">
                     </div>
-                    <div class="remember forget">
-                        <div class="rdiv">
-                            <button class="rememberbtn"><small>Remember</small></button>
-                        </div>
-                        <div class="fdiv">
-                            <button class="forgetbtn"><small>Forget</small></button>
-                        </div>
-                         
+                    <div class="remember forget" id="forget">
+                        <small><button>Remember</button></small>
+                        <small><button>Forget</button></small>
                     </div>
-                    <div class="logtbn" id="logbtn">
-                        <button class="login-btn" id="login-btn">Sign In</button>
-                    </div>
-                </form>
-            </div>
-            <!-- sign up here -->
-            <div class="signup" id="signup">
-                <form class="signup-input" id="signup-input">
-                    <div class="input1" id="input1">
-                        <input type="email" class="signup-email" id="email" placeholder="Email...">
-                    </div>
-                    
-                    <div class="input2" id="input2">
-                        <input type="password" class="signup-password" id="signup-password" placeholder="Password...">
-                    </div>
-                    <div class="input3" id="input3">
-                        <input type="password" class="signup-password" id="signup-password" placeholder="Confirm Password...">
-                    </div>
-                    <!-- <div class="remember forget">
-                        <div class="rdiv">
-                            <button class="rememberbtn"><small>Remember</small></button>
-                        </div>
-                        <div class="fdiv">
-                            <button class="forgetbtn"><small>Forget</small></button>
-                        </div>
-                         
-                    </div> -->
-                    <div class="logtbn" id="logbtn">
-                        <button class="login-btn" id="login-btn">Sign Up</button>
+                    <div class="signin">
+                        <button class="btn-sign-in">Sign In</button>
                     </div>
                 </form>
             </div>
         </div>
-
+        
      <script src="js/script.js"></script>
   </body>
 </html>  

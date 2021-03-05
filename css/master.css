@@ -179,7 +179,7 @@ body{
     margin:0;padding:0;
     height:8vh;
     background: rgb(136, 199, 207);
-    position: fixed;
+    position: absolute;
     width:100%;
     top:0;
     

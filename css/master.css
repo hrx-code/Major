@@ -177,12 +177,11 @@ body{
 
 .navbar{
     margin:0;padding:0;
-    height:8vh;
     background: rgb(136, 199, 207);
-    position: absolute;
+    position: fixed;
     width:100%;
-    top:0;
-    
+    top:0vh;
+    height:8vh;
 }
 
 .navbar{

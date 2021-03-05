@@ -5,6 +5,8 @@ const remforg=document.getElementById('forget');
 const signInUpBtn=document.getElementById('btn-sign-in');
 const closePopUp=document.getElementById('close'),
 popUpContainer=document.getElementById('pop-container');
+const sideBarToggler=document.getElementById('sideBarToggler');
+const sideBar=document.getElementById('sidebar');
 
 // offline data
 var alok = {
@@ -95,3 +97,9 @@ topBarUp.addEventListener('click',()=>{
 closePopUp.addEventListener('click',()=>{
     popUpContainer.classList.toggle('hideContainer');
 })
+
+// sidebar and navbar
+sideBarToggler.addEventListener('click',()=>{
+    sideBar.classList.toggle('show');
+})
+

@@ -7,6 +7,7 @@ body{
     padding:0;
     background:#21272c;
     color:#fff;
+    transition:transform 0.4s ease;
 }
 .pop-container{
     width:350px;
@@ -30,6 +31,7 @@ body{
     right:1px;
     color:rgb(0, 0, 0);
     padding:5px;
+    cursor: pointer;
 }
 
 .main{
@@ -70,10 +72,14 @@ body{
     font-size:10px;
 }
 
-
 .signin button{
     width:100%; 
 }
+
+.sellerorbuyer .choose{
+    width:100%;
+}
+
 
 /* above this aligned each item at its place */
 
@@ -130,6 +136,7 @@ body{
 .top-btn button:hover,:active{
     cursor: pointer;
     outline:none;
+    
 }
 
 .btn-sign-in:hover{
@@ -142,6 +149,18 @@ body{
     outline: none;
 }
 
+.sellerorbuyer select{
+    border:2px lightcyan;
+    padding:7px 3px 7px 3px;
+    margin:10px 0;
+}
+
+
+
+
+
+
+
 /* event  */
 .changeBorder{
     border-bottom:2px solid #58b87d;
@@ -153,3 +172,179 @@ body{
 .hideContainer{
     display:none;
 }
+
+/* COMPLETE NAVBAR DOWN HERE */
+
+.navbar{
+    margin:0;padding:0;
+    height:8vh;
+    background: rgb(136, 199, 207);
+    position: fixed;
+    width:100%;
+    top:0;
+    
+}
+
+.navbar{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.navmaterial{
+    width:88%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    color:black;
+    height:100%; 
+    font-size:15px;
+    font-weight: 700;
+    
+}
+
+.space1{
+    width:7%;
+    /* background: red; */
+    text-align: center;
+    display:none;
+}
+.space2{
+    width:5%;
+    /* background: red; */
+}
+/*  */
+
+.flex0{ width:25%; overflow-wrap: break-word;}
+.flex{width:50%;}
+.flex2{width:35%;}
+
+
+.flex{
+    /* margin:0 5px; */
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#search{
+    background:#fff;
+    padding:5px;
+    border:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#search:focus{
+    outline:0;
+}
+input[type="text"]{
+    width:100%;
+}
+.search-btn{
+    padding:5px;
+    border:none;
+    background:#fff;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+.search-btn:focus{
+    outline:0;
+}
+
+.search-form{width:100%;}
+
+/* RularsTech */
+.flex0{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+    padding:0 5px;
+}
+
+/* flex2 */
+
+.flex2{
+    display:flex;
+    flex-direction: row-reverse;
+    height: 100%;
+    align-items: center;
+    /* justify-content: center; */
+    padding:0 5px;
+}
+.flex2 li{
+    list-style-type: none;
+}
+.flex20{
+    padding:0 5px;
+}
+
+/*************** sidebar */
+
+.sidebar{
+    position: fixed;
+    top:8vh;
+    bottom:0;
+    height:100%;
+    background: rgb(136, 199, 207);
+    width:150px;
+    color:#000;
+    font-weight: 700;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-100%);
+    
+}
+.sidebar.show{
+    transform: translate(0);
+    transition:3sec ease-in-out;
+}
+.lundMeraMc{
+    width:100%;
+}
+.sidebar img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    padding-top:15px;
+    
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom:2px solid #000;
+}
+
+.sidebar .lundMeraMc :first-child{
+    border-top:2px solid #000;
+}
+
+/***************  sidebar */
+
+.paragraphs{
+    margin:0 auto;
+    padding:0 auto;
+    text-align: center;
+}
+
+@media(width:500px){
+    
+    .flex2{
+        display: none;
+    }
+    .space1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

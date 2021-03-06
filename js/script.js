@@ -7,6 +7,9 @@ const closePopUp=document.getElementById('close'),
 popUpContainer=document.getElementById('pop-container');
 const sideBarToggler=document.getElementById('sideBarToggler');
 const sideBar=document.getElementById('sidebar');
+const bodi=document.getElementById('bodi');
+
+
 
 // offline data
 var alok = {

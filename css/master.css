@@ -342,7 +342,7 @@ input[type="text"]{
     text-align: center;
 }
 
-@media(max-width:750px){
+@media(max-width:800px){
     
     .flex2{
         display: none;

@@ -182,7 +182,7 @@ body{
     width:100%;
     top:0vh;
     height:7vh;
-    overflow-x: visible;
+    
 }
 
 .navbar{
@@ -192,7 +192,7 @@ body{
     z-index:1;
 }
 .navmaterial{
-    width:93%;
+    width:100%;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -208,17 +208,23 @@ body{
     width:7%;
     /* background: red; */
     text-align: center;
+    display:none;
 }
-#sideBarToggler{
-    display: none;
+.space2{
+    width:3%;
+    /* background: red; */
 }
-
 /*  */
 
-.flex0{ width:25%; overflow-wrap: break-word;}
+.flex0{ width:15%; overflow-wrap: break-word;}
 .flex{width:50%;}
 .flex2{width:35%;}
 
+
+.logo-name {
+    word-break: break-word;
+    text-align: center;
+}
 
 .flex{
     /* margin:0 5px; */
@@ -244,7 +250,7 @@ input[type="text"]{
     height:50%;
 }
 .search-btn{
-    padding:5px;
+    /* padding:5px; */
     border:none;
     background:#fff;
     border-top-right-radius:5px;
@@ -257,7 +263,7 @@ input[type="text"]{
     outline:0;
 }
 
-.search-form{width:100%;}
+.search-form{width:80%;}
 
 /* RularsTech */
 .flex0{
@@ -344,12 +350,20 @@ input[type="text"]{
 
 
 
+
+
+
+
+
+
+
+
+
 /* MAIN BODY */
 
 .main{
     top:10vh;
     width:100%;
-    position:relative;
     height:100%;
     background: rgba(100, 95, 77, 0.13);
 }
@@ -381,20 +395,10 @@ input[type="text"]{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 @media (max-width:768px){
     
     .navmaterial{
-        width:90%;
+        width:93%;
     }
     .flex2{
         display: none;
@@ -417,30 +421,10 @@ input[type="text"]{
         justify-content: center;
         margin:0 10px;
     }
-    #sideBarToggler{
-        display: block;
-    }
 }
-
 
 @media (max-width:400px){
     .flex0{
         font-size: 14px;
-    }
-}
-
-/* @media(max-width:1200px){
-    .grid{
-        grid-template-columns: repeat(5,1fr);
-    }
-} */
-@media(max-width:900px){
-    .grid{
-        grid-template-columns: repeat(5,1fr);
-    }
-}
-@media(max-width:700px){
-    .grid{
-        grid-template-columns: repeat(2,1fr);
     }
 }

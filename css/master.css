@@ -189,7 +189,7 @@ body{
     display:flex;
     flex-direction: row;
     align-items: center;
-    
+    z-index:1;
 }
 .navmaterial{
     width:90%;
@@ -308,6 +308,7 @@ input[type="text"]{
     align-items: center;
     transform: translateX(-100%);
     transition: all .5s ease-in-out;
+    z-index: 1;
 }
 .sidebar.show{
     transform: translate(0);
@@ -340,11 +341,28 @@ input[type="text"]{
 
 /***************  sidebar */
 
-.paragraphs{
-    margin:0 auto;
-    padding:0 auto;
-    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN BODY */
+
+.main{
+    top:7vh;
+    width:100%;
+    position:relative;
+    height:100vh;
+    background: rgba(100, 95, 77, 0.13);
 }
+
 
 @media(max-width:800px){
     

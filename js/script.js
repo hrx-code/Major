@@ -8,7 +8,7 @@ popUpContainer=document.getElementById('pop-container');
 const sideBarToggler=document.getElementById('sideBarToggler');
 const sideBar=document.getElementById('sidebar');
 const bodi=document.getElementById('bodi');
-
+const main=document.getElementById('main');
 
 
 // offline data
@@ -104,5 +104,11 @@ closePopUp.addEventListener('click',()=>{
 // sidebar and navbar
 sideBarToggler.addEventListener('click',()=>{
     sideBar.classList.toggle('show');
+})
+
+main.addEventListener('click',(e)=>{
+    console.log(e.target.classList);
+    if(e.target.classList.contains('main'))
+       sideBar.classList.remove('show');
 })
 

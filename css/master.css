@@ -394,7 +394,7 @@ input[type="text"]{
 @media (max-width:768px){
     
     .navmaterial{
-        width:93%;
+        width:90%;
     }
     .flex2{
         display: none;
@@ -429,11 +429,11 @@ input[type="text"]{
     }
 }
 
-@media(max-width:1200px){
+/* @media(max-width:1200px){
     .grid{
         grid-template-columns: repeat(5,1fr);
     }
-}
+} */
 @media(max-width:900px){
     .grid{
         grid-template-columns: repeat(5,1fr);

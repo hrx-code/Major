@@ -367,22 +367,21 @@ input[type="text"]{
 @media (max-width:768px){
     
     .navmaterial{
-        padding-left:10px;
         width:93%;
     }
     .flex2{
         display: none;
+        width:0px;
     }
-    .flex{
-        width: 80%;
-    }
+    
    
     
     .space1{
         display:flex;
         align-items: center;
         justify-content: center;
-        padding-left:10px;
+        margin:0 10px;
+        width:0;
     }
 }
 

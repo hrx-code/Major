@@ -192,7 +192,7 @@ body{
     z-index:1;
 }
 .navmaterial{
-    width:90%;
+    width:93%;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -208,12 +208,11 @@ body{
     width:7%;
     /* background: red; */
     text-align: center;
-    display:none;
 }
-.space2{
-    width:3%;
-    /* background: red; */
+#sideBarToggler{
+    display: none;
 }
+
 /*  */
 
 .flex0{ width:25%; overflow-wrap: break-word;}
@@ -345,24 +344,51 @@ input[type="text"]{
 
 
 
-
-
-
-
-
-
-
-
-
 /* MAIN BODY */
 
 .main{
-    top:7vh;
+    top:10vh;
     width:100%;
     position:relative;
-    height:100vh;
+    height:100%;
     background: rgba(100, 95, 77, 0.13);
 }
+
+.grid{
+    margin:0 auto;
+    display: grid;
+    width:80%;
+    height:100%;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:.5em;
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    background: rgb(130, 163, 143);
+    align-items: center;
+    justify-content: center;
+}
+
+.items img{
+    width:100%;
+}
+
+.imgdiv{
+    width:100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width:768px){
@@ -391,7 +417,11 @@ input[type="text"]{
         justify-content: center;
         margin:0 10px;
     }
+    #sideBarToggler{
+        display: block;
+    }
 }
+
 
 @media (max-width:400px){
     .flex0{
@@ -399,3 +429,18 @@ input[type="text"]{
     }
 }
 
+@media(max-width:1200px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width:900px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:700px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

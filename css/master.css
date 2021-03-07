@@ -364,7 +364,7 @@ input[type="text"]{
 }
 
 
-@media(max-width:1000px){
+@media screen (max-width:1000px){
     
     .flex2{
         display: none;

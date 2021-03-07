@@ -182,7 +182,7 @@ body{
     width:100%;
     top:0vh;
     height:7vh;
-    
+    overflow-x: visible;
 }
 
 .navbar{

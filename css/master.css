@@ -371,17 +371,30 @@ input[type="text"]{
     }
     .flex2{
         display: none;
-        width:0px;
+        width:0%;
     }
-    
-   
+    .flex0{
+        width:30%;
+    }
+     
+    .flex{
+        width:70%;
+    }
+    .search-form{
+        width:80%;
+    }
     
     .space1{
         display:flex;
         align-items: center;
         justify-content: center;
         margin:0 10px;
-        width:0;
+    }
+}
+
+@media (max-width:400px){
+    .flex0{
+        font-size: 14px;
     }
 }
 

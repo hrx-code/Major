@@ -12,6 +12,8 @@ const main=document.getElementById('main');
 const switCart=[];
 alladdtocart=document.getElementsByClassName('addtocart');
 switchCart=[...alladdtocart];
+const cartSidebar=document.getElementById('cart-sidebar');
+const cartNavBar=document.getElementById('cart');
 
 
 // offline data
@@ -121,6 +123,9 @@ main.addEventListener('click',(e)=>{
 // })
 
 
+// add to cart ! list of items added
+const cartItems=[];
+
 switchCart.forEach(gocart);
 
 function gocart(item){
@@ -133,6 +138,16 @@ function gocart(item){
         else{
             item.classList.add('gotocart');
             item.innerHTML=`<button>Go To Cart</button>`;
+            const parent=item.parentNode;
+            // console.log(parent.attributes[0].nodeValue);
+            cartItems.push(parent.attributes[0].nodeValue);
+            cartSidebar.innerHTML=`Cart +${cartItems.length}`;
+            cartNavBar.innerHTML=`Cart +${cartItems.length}`;
         }
     })
 }
+
+
+
+
+

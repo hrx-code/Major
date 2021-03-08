@@ -384,6 +384,27 @@ input[type="text"]{
     background: rgb(130, 163, 143);
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+.addtocart{
+    position: absolute;
+    top:5px;
+    right:5px;
+}
+
+.addtocart button{
+    background: transparent;
+    font-style: none;
+    box-shadow: none;
+    border:2px solid rgb(17, 68, 66);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.addtocart button:focus{
+    outline: none;
+}
+.addtocart button:hover{
+    background: rgb(17, 68, 66);
 }
 
 .items img{

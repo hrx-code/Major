@@ -110,5 +110,10 @@ main.addEventListener('click',(e)=>{
     console.log(e.target.classList);
     if(e.target.classList.contains('main'))
        sideBar.classList.remove('show');
+
+})
+
+document.addEventListener('click',(e)=>{
+    console.log(e.target.classList);
 })
 

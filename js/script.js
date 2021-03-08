@@ -9,6 +9,9 @@ const sideBarToggler=document.getElementById('sideBarToggler');
 const sideBar=document.getElementById('sidebar');
 const bodi=document.getElementById('bodi');
 const main=document.getElementById('main');
+const switCart=[];
+alladdtocart=document.getElementsByClassName('addtocart');
+switchCart=[...alladdtocart];
 
 
 // offline data
@@ -113,7 +116,23 @@ main.addEventListener('click',(e)=>{
 
 })
 
-document.addEventListener('click',(e)=>{
-    console.log(e.target.classList);
-})
+// document.addEventListener('click',(e)=>{
+//     console.log(e.target.classList);
+// })
 
+
+switchCart.forEach(gocart);
+
+function gocart(item){
+    item.addEventListener('click',()=>{
+
+        // console.log("clicked");
+        if(item.classList.contains('gotocart')){
+            console.log("cart link");
+        }
+        else{
+            item.classList.add('gotocart');
+            item.innerHTML=`<button>Go To Cart</button>`;
+        }
+    })
+}

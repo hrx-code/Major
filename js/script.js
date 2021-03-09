@@ -158,18 +158,54 @@ loginBtnSideBar.addEventListener('click',()=>{
     popUpContainer.classList.toggle("hideContainer");
 })
 
-
+// cart button and relatives
  cartNavBar.addEventListener('click',itemsInCart);
 cartSidebar.addEventListener('click',itemsInCart);
 
-function itemsInCart(){
+function itemsInCart(){ let count=0;
+    let cartContainer=document.createElement('div');
+    cartContainer.className="cart-container";
+    cartContainer.id="cart-container";
     sideBar.classList.toggle('show');
     main.classList.add('hide');
     cartItems.forEach(item=>{
-        console.log(item.Id);
+        // item.attributes.id
+        let temp=item.attributes.id;
+        let img=item.getElementsByTagName('img');
+        let imageSrc=img[0].src;
+        let descriptions=item.getElementsByClassName('crop-description');
+        // image description, already taken
+        // extra details to add ! may be these details will come from backend;
+        // but right now , I'm hardCodingIt;
+        let div=document.createElement('div');
+        div.className='show-cart-items';
+        div.id=`show-cart-items${count}`;
+
+        let imgdiv=document.createElement('div');
+        imgdiv.className='cart-item-image';
+        imgdiv.id=`cart-item-image${count} cart-flex1`;
+
+        let varimg=document.createElement('img');
+        varimg.src=imageSrc;
+        imgdiv.appendChild(varimg);
+
+        let otherDetails=document.createElement('div');
+        otherDetails.id='cart-flex2';
+        otherDetails.className="cart-item-details";
+        otherDetails.innerHTML=`<p>this section will take more details about crop and some buttons to check out , multiple copies of item.</p>`;
+
+        div.appendChild(imgdiv);
+        div.appendChild(otherDetails);
+
+        cartContainer.appendChild(div);
+
+        count++;
     })
+
+    bodi.appendChild(cartContainer);
 }
 
+// home button
 homeSideBar.addEventListener('click',()=>{
     main.classList.remove('hide');
     sideBar.classList.toggle('show');

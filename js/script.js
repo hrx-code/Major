@@ -192,7 +192,7 @@ function itemsInCart(){ let count=0;
         let otherDetails=document.createElement('div');
         otherDetails.id='cart-flex2';
         otherDetails.className="cart-item-details";
-        otherDetails.innerHTML=`<p>this section will take more details about crop and some buttons to check out , multiple copies of item.</p>`;
+        otherDetails.innerHTML=`<p>this section will take more details about crop and some buttons to check out , multiple copies of item. lorem</p>`;
 
         div.appendChild(imgdiv);
         div.appendChild(otherDetails);

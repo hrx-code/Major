@@ -406,7 +406,9 @@ input[type="text"]{
     width:100%;
     height:100%;
     background: rgba(100, 95, 77, 0.13);
-
+}
+.main.hide{
+    display: none;
 }
 
 .grid{

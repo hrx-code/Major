@@ -17,6 +17,7 @@ const cartNavBar=document.getElementById('cart');
 const loginBtn=document.getElementById('entry')
 const inout=document.getElementById('inout');
 const loginBtnSideBar=document.getElementById('entry-sidebar')
+const homeSideBar=document.getElementById('home-sidebar');
 
 // offline data
 var alok = {
@@ -134,7 +135,7 @@ function gocart(item){
             item.innerHTML=`<button>Go To Cart</button>`;
             const parent=item.parentNode;
             // console.log(parent.attributes[0].nodeValue);
-            cartItems.push(parent.attributes[0].nodeValue);
+            cartItems.push(parent);
             cartSidebar.innerHTML=`Cart +${cartItems.length}`;
             cartNavBar.innerHTML=`Cart +${cartItems.length}`;
         }
@@ -152,9 +153,24 @@ loginBtn.addEventListener('click',function(){
 // click on login button from sidebar
 
 loginBtnSideBar.addEventListener('click',()=>{
+    sideBar.classList.toggle('show');
     inout.classList.toggle('hideinout');
     popUpContainer.classList.toggle("hideContainer");
 })
 
 
+ cartNavBar.addEventListener('click',itemsInCart);
+cartSidebar.addEventListener('click',itemsInCart);
 
+function itemsInCart(){
+    sideBar.classList.toggle('show');
+    main.classList.add('hide');
+    cartItems.forEach(item=>{
+        console.log(item.Id);
+    })
+}
+
+homeSideBar.addEventListener('click',()=>{
+    main.classList.remove('hide');
+    sideBar.classList.toggle('show');
+})

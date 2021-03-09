@@ -9,12 +9,14 @@ const sideBarToggler=document.getElementById('sideBarToggler');
 const sideBar=document.getElementById('sidebar');
 const bodi=document.getElementById('bodi');
 const main=document.getElementById('main');
-const switCart=[];
+let switchCart=[];
 alladdtocart=document.getElementsByClassName('addtocart');
 switchCart=[...alladdtocart];
 const cartSidebar=document.getElementById('cart-sidebar');
 const cartNavBar=document.getElementById('cart');
-
+const loginBtn=document.getElementById('entry')
+const inout=document.getElementById('inout');
+const loginBtnSideBar=document.getElementById('entry-sidebar')
 
 // offline data
 var alok = {
@@ -47,7 +49,6 @@ var aman = {
     sex:"Male",
     area:"Sitamarhi"
 }
-
 var devanshu = {
     fname:"Devanshu",
     lname:"Dev",
@@ -66,22 +67,12 @@ var komal = {
     sex:"Female",
     area:"Gorakhpur"
 }
-
 var sukriti = {
     fname:"Sukriti",
     lname:"Kumari",
     sex:"Female",
     area:"Buxar"
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -104,6 +95,7 @@ topBarUp.addEventListener('click',()=>{
 
 closePopUp.addEventListener('click',()=>{
     popUpContainer.classList.toggle('hideContainer');
+    inout.classList.toggle('hideinout');
 })
 
 // sidebar and navbar
@@ -125,6 +117,8 @@ main.addEventListener('click',(e)=>{
 
 // add to cart ! list of items added
 const cartItems=[];
+
+// console.log(switchCart);
 
 switchCart.forEach(gocart);
 
@@ -148,6 +142,19 @@ function gocart(item){
 }
 
 
+// click on login button from navbar
+
+loginBtn.addEventListener('click',function(){
+    inout.classList.toggle('hideinout');
+    popUpContainer.classList.toggle("hideContainer");
+})
+
+// click on login button from sidebar
+
+loginBtnSideBar.addEventListener('click',()=>{
+    inout.classList.toggle('hideinout');
+    popUpContainer.classList.toggle("hideContainer");
+})
 
 
 

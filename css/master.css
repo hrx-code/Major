@@ -490,11 +490,14 @@ input[type="text"]{
     align-items: center;
     height:150px;
     width:80%;
-    padding-bottom: 10px;
+    border-bottom: 5px solid rgb(55, 111, 121);
+    background: #853c5f;
 }
 .cart-item-image {
-    
+    flex:3;
     height:100%;
+    max-width: 250px;
+    padding-right:5px;
 }
 .cart-item-image img{
     width:100%;
@@ -505,6 +508,7 @@ input[type="text"]{
     height:100%;
     background: #fcdecf;
     color:#000;
+    flex:2;
 }
 
 

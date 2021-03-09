@@ -488,7 +488,7 @@ input[type="text"]{
     display:flex;
     flex-direction: row;
     align-items: center;
-    height:150px;
+    height:200px;
     width:80%;
     border-bottom: 5px solid rgb(55, 111, 121);
     background: #853c5f;
@@ -509,6 +509,7 @@ input[type="text"]{
     background: #fcdecf;
     color:#000;
     flex:2;
+    overflow: scroll;
 }
 
 

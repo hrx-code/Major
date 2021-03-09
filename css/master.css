@@ -505,7 +505,11 @@ input[type="text"]{
         font-size: 14px;
     }
 }
-
+@media(min-width:769px){
+    .sidebar.show{
+        transform: translateX(-100%);
+    }
+}
 @media (max-width:1284px){
     .grid{
         grid-auto-rows: 300px;

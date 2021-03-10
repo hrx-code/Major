@@ -511,6 +511,9 @@ input[type="text"]{
     flex:2;
     overflow-y: scroll;
 }
+.cart-container.hide{
+    display:none;
+}
 
 
 @media (max-width:768px){

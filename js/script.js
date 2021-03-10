@@ -163,6 +163,16 @@ loginBtnSideBar.addEventListener('click',()=>{
 cartSidebar.addEventListener('click',itemsInCart);
 
 function itemsInCart(){ let count=0;
+
+    // check if cart container is hidden
+    let isCartHidden=document.getElementById('cart-container');
+    if(isCartHidden!=null && isCartHidden.classList.contains('hide')){
+        isCartHidden.classList.toggle('hide');
+        sideBar.classList.toggle('show');
+        main.classList.add('hide');
+        return;
+    }
+
     let cartContainer=document.createElement('div');
     cartContainer.className="cart-container";
     cartContainer.id="cart-container";
@@ -192,7 +202,7 @@ function itemsInCart(){ let count=0;
         let otherDetails=document.createElement('div');
         otherDetails.id='cart-flex2';
         otherDetails.className="cart-item-details";
-        otherDetails.innerHTML=`<p>this section will take more details about crop and some buttons to check out , multiple copies of item. lorem</p>`;
+        otherDetails.innerHTML=`<p>this section will take more details about crop and some buttons to check out , multiple copies of item. lorem Hi, this is harsh sharma Seeking entry level role software development department skilled in data structure and algorithms and frontend development with computer science fundamentals  </p>`;
 
         div.appendChild(imgdiv);
         div.appendChild(otherDetails);
@@ -209,4 +219,6 @@ function itemsInCart(){ let count=0;
 homeSideBar.addEventListener('click',()=>{
     main.classList.remove('hide');
     sideBar.classList.toggle('show');
+    let cartContainer=document.getElementById('cart-container');
+    cartContainer.classList.toggle('hide');
 })

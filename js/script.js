@@ -220,5 +220,5 @@ homeSideBar.addEventListener('click',()=>{
     main.classList.remove('hide');
     sideBar.classList.toggle('show');
     let cartContainer=document.getElementById('cart-container');
-    cartContainer.classList.toggle('hide');
+    cartContainer.classList.add('hide');
 })

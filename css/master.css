@@ -429,6 +429,7 @@ input[type="text"]{
     align-items: center;
     justify-content: center;
     position: relative;
+    /* opacity: 0; */
 }
 
 .items:hover{

@@ -18,7 +18,7 @@ const loginBtn=document.getElementById('entry')
 const inout=document.getElementById('inout');
 const loginBtnSideBar=document.getElementById('entry-sidebar')
 const homeSideBar=document.getElementById('home-sidebar');
-
+let preCartItems=[];
 // offline data
 var alok = {
     fname:"Alok",
@@ -115,9 +115,10 @@ main.addEventListener('click',(e)=>{
 //     console.log(e.target.classList);
 // })
 
+//--------------------------------------------------
 
 // add to cart ! list of items added
-const cartItems=[];
+let cartItems=[];
 
 // console.log(switchCart);
 
@@ -142,6 +143,7 @@ function gocart(item){
     })
 }
 
+//-------------------------------------------------
 
 // click on login button from navbar
 
@@ -172,7 +174,7 @@ function itemsInCart(){ let count=0;
         main.classList.add('hide');
         return;
     }
-
+    
     let cartContainer=document.createElement('div');
     cartContainer.className="cart-container";
     cartContainer.id="cart-container";
@@ -211,8 +213,9 @@ function itemsInCart(){ let count=0;
 
         count++;
     })
-
+   
     bodi.appendChild(cartContainer);
+    
 }
 
 // home button
